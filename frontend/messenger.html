@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DeChat: Messenger</title>
+	<meta http-equiv="Context-Type" content="text/html"; charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/near-api-js@1.1.0/dist/near-api-js.min.js"></script>
+	<script src="scripts/messenger.js"></script>
+	<link rel="stylesheet" type="text/css" href="messenger.css"/>
+</head>
+<body onload="init()">
+	<div class="app">
+		<header>
+			<h3>DeChat</h3>
+		</header>
+		<div class="container">
+			<main>
+				<div class="dummy"></div>
+			</main>
+			<div class="message_sender">
+				<input type="text" placeholder="Write a message..." id="message_input" minlength="1">
+				<button type="submit" value="Send" onclick="send_button()">➡</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

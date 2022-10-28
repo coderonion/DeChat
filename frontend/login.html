@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DeChat: Login</title>
+	<meta http-equiv="Context-Type" content="text/html"; charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="scripts/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="login.css"/>
+
+</head>
+<body>
+	<div class="app">
+		<header>
+			<h3>DeChat</h3>
+		</header>
+		<div class="container">
+			<main>
+				<label for="public_key">Wallet ID</label>
+				<input type="text" placeholder="wallet_id.testnet" name="public_key" id="public_key" minlength="8"/>
+				<label for="private_key">Private key</label>
+				<input type="text" placeholder="ed25519:private_key" name="private_key" id="private_key" minlength="8"/>
+				<button class="login" onclick="login_button()">Login</button>
+			</main>
+		</div>
+	</div>
+</body>
+</html>
